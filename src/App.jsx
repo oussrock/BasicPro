@@ -268,7 +268,7 @@ export default function App() {
       {/* HERO */}
       <section id="home" style={{
         ...secBg(
-          "https://images.unsplash.com/photo-1527515637462-cff94aca55f2?w=1600&q=80",
+          "https://picsum.photos/id/1067/1600/900",
           "linear-gradient(135deg,rgba(7,14,40,.87) 0%,rgba(13,27,75,.80) 55%,rgba(10,20,60,.78) 100%)"
         ),
         minHeight:"100svh", display:"flex", alignItems:"center"
@@ -303,7 +303,7 @@ export default function App() {
       {/* NIGHT */}
       <section id="night" className="p" style={{
         ...secBg(
-          "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=1600&q=80",
+          "https://picsum.photos/id/1040/1600/900",
           "linear-gradient(135deg,rgba(4,8,24,.93) 0%,rgba(7,14,40,.90) 60%,rgba(13,27,75,.88) 100%)"
         ),
         padding:"92px 18px"
@@ -335,7 +335,7 @@ export default function App() {
 
       {/* SERVICES */}
       <section id="services" className="p" style={{
-        ...secBgLight("https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1600&q=80"),
+        ...secBgLight("https://picsum.photos/id/1060/1600/900"),
         padding:"92px 18px"
       }}>
         <div style={{ maxWidth:1140,margin:"0 auto",position:"relative",zIndex:2 }}>
@@ -360,7 +360,7 @@ export default function App() {
       {/* WHY */}
       <section id="why" className="p" style={{
         ...secBg(
-          "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80",
+          "https://picsum.photos/id/1025/1600/900",
           "linear-gradient(135deg,rgba(13,27,75,.91) 0%,rgba(7,14,40,.90) 100%)"
         ),
         padding:"92px 18px"
@@ -393,7 +393,7 @@ export default function App() {
 
       {/* QUOTE */}
       <section id="quote" className="p" style={{
-        ...secBgLight("https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80"),
+        ...secBgLight("https://picsum.photos/id/1068/1600/900"),
         padding:"92px 18px"
       }}>
         <div style={{ maxWidth:800,margin:"0 auto",position:"relative",zIndex:2 }}>
@@ -445,7 +445,7 @@ export default function App() {
       {/* CONTACT */}
       <section id="contact" className="p" style={{
         ...secBg(
-          "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1600&q=80",
+          "https://picsum.photos/id/1071/1600/900",
           "linear-gradient(135deg,rgba(13,27,75,.92) 0%,rgba(7,14,40,.90) 100%)"
         ),
         padding:"92px 18px"
