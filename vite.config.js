@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   // Configure the base path for GitHub Pages deployment.
   // This should match your repository name.
-  base: '/BasicPro/', 
+  base: '/', 
   server: {
     proxy: {
       // This proxy is for local development to connect frontend to backend
