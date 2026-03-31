@@ -92,6 +92,12 @@ export interface ContactTranslations {
 export interface FooterTranslations {
   tag: string;
   rights: string;
+  zonesTitle: string;
+  zones: {
+    sherbrooke: string[];
+    magog: string[];
+    others: string[];
+  };
 }
 
 export interface Translations {
@@ -159,7 +165,16 @@ export const T: Record<string, Translations> = {
       hours:"Heures d'opération", hoursV:"Lun–Ven: 4h–20h | Sam: 4h–17h",
       hoursN:"Interventions nocturnes disponibles sur entente",
     },
-    footer:{ tag:"L'entretien ménager professionnel à votre service.", rights:"Tous droits réservés." },
+    footer:{ 
+      tag:"L'entretien ménager professionnel à votre service.", 
+      rights:"Tous droits réservés.",
+      zonesTitle: "Zones Desservies",
+      zones: {
+        sherbrooke: ["Lennoxville", "Fleurimont", "Brompton", "Rock Forest"],
+        magog: ["Magog", "Orford", "North Hatley", "Stanstead"],
+        others: ["Coaticook", "Richmond", "Windsor", "Estrie"]
+      }
+    },
   },
   en: {
     nav:{ home:"Home", services:"Services", night:"We Work Nights", contact:"Contact", quote:"Free Quote" },
@@ -214,7 +229,16 @@ export const T: Record<string, Translations> = {
       hours:"Operating Hours", hoursV:"Mon–Fri: 4AM–8PM | Sat: 4AM–5PM",
       hoursN:"Overnight services available by arrangement",
     },
-    footer:{ tag:"Professional cleaning services at your service.", rights:"All rights reserved." },
+    footer:{ 
+      tag:"Professional cleaning services at your service.", 
+      rights:"All rights reserved.",
+      zonesTitle: "Service Areas",
+      zones: {
+        sherbrooke: ["Lennoxville", "Fleurimont", "Brompton", "Rock Forest"],
+        magog: ["Magog", "Orford", "North Hatley", "Stanstead"],
+        others: ["Coaticook", "Richmond", "Windsor", "Eastern Townships"]
+      }
+    },
   },
 };
 
