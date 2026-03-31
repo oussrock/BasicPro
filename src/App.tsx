@@ -103,7 +103,7 @@ export default function App() {
       <Section
         id="home"
         style={{ minHeight: "100svh", display: "flex", alignItems: "center" }}
-        bgImage="https://images.unsplash.com/photo-1527515637462-cff94aca55f2?w=1600&q=80"
+        bgImage="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1600&q=80"
         overlay="linear-gradient(135deg,rgba(7,14,40,.87) 0%,rgba(13,27,75,.80) 55%,rgba(10,20,60,.78) 100%)"
       >
         <div className="dot" style={{ left: 100, top: 180, width: 12, height: 12, animationDelay: "0s" }} />
@@ -206,7 +206,7 @@ export default function App() {
         id="services"
         className="p"
         isLight
-        bgImage="https://images.unsplash.com/photo-1527515637462-cff94aca55f2?w=1600&q=80"
+        bgImage="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1600&q=80"
         style={{ padding: "92px 18px" }}
       >
         <div style={{ maxWidth: 1140, margin: "0 auto", position: "relative", zIndex: 2 }}>
