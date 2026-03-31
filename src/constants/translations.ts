@@ -103,6 +103,7 @@ export interface FooterTranslations {
 export interface Translations {
   nav: NavTranslations;
   hero: HeroTranslations;
+  clientsTitle: string;
   night: NightTranslations;
   svc: ServiceTranslations;
   why: WhyTranslations;
@@ -120,6 +121,7 @@ export const T: Record<string, Translations> = {
       cta:"Soumission gratuite", cta2:"Nos services",
       t1:"Restaurants & Bureaux", t2:"Sherbrooke & Magog", t3:"Satisfaction garantie",
     },
+    clientsTitle: "Ils nous font confiance",
     night: {
       ey:"Notre promesse", title:"Vous partez. On s'occupe du reste.", hi:"Revenez à un espace parfait.",
       desc:"Nous intervenons quand votre établissement est fermé — tôt le matin, tard le soir, la nuit — pour que tout soit impeccable à votre arrivée.",
@@ -184,6 +186,7 @@ export const T: Record<string, Translations> = {
       cta:"Get a Free Quote", cta2:"Our Services",
       t1:"Restaurants & Offices", t2:"Sherbrooke & Magog", t3:"Satisfaction Guaranteed",
     },
+    clientsTitle: "Trusted by Local Leaders",
     night:{
       ey:"Our Promise", title:"You leave. We handle the rest.", hi:"Come back to perfection.",
       desc:"We step in while your business is closed — early mornings, late evenings, overnight — so everything is spotless when you arrive.",

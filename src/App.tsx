@@ -142,6 +142,20 @@ export default function App() {
         <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: 80, background: "linear-gradient(transparent,#f8f6f1)", zIndex: 5, pointerEvents: "none" }} />
       </Section>
 
+      {/* CLIENTS / TRUSTED BY */}
+      <section style={{ background: "#f8f6f1", padding: "40px 18px", borderBottom: "1px solid rgba(0,0,0,0.05)" }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto", textAlign: "center" }}>
+          <div className="s" style={{ color: "var(--gold)", fontSize: 10, fontWeight: 700, letterSpacing: ".2em", textTransform: "uppercase", marginBottom: 24 }}>
+            — {t.clientsTitle} —
+          </div>
+          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "center", gap: "clamp(30px, 8vw, 60px)", opacity: 0.8 }}>
+            <img src="https://upload.wikimedia.org/wikipedia/fr/b/bd/Logo_La_Cage_-_Brasserie_sportive.png" alt="La Cage" style={{ height: "clamp(35px, 6vw, 50px)", width: "auto", objectFit: "contain" }} />
+            <img src="https://caffuccino.com/wp-content/uploads/2021/05/logo-caffuccino.png" alt="Caffuccino" style={{ height: "clamp(35px, 6vw, 50px)", width: "auto", objectFit: "contain" }} />
+            <img src="https://eggsquis.com/wp-content/themes/eggsquis/img/logo-eggsquis.png" alt="Eggsquis" style={{ height: "clamp(30px, 5vw, 45px)", width: "auto", objectFit: "contain" }} />
+          </div>
+        </div>
+      </section>
+
       {/* NIGHT */}
       <Section
         id="night"
