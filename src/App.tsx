@@ -149,9 +149,9 @@ export default function App() {
             — {t.clientsTitle} —
           </div>
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "center", gap: "clamp(30px, 8vw, 60px)", opacity: 0.8 }}>
-            <img src="https://upload.wikimedia.org/wikipedia/fr/b/bd/Logo_La_Cage_-_Brasserie_sportive.png" alt="La Cage" style={{ height: "clamp(35px, 6vw, 50px)", width: "auto", objectFit: "contain" }} />
-            <img src="https://caffuccino.com/wp-content/uploads/2021/05/logo-caffuccino.png" alt="Caffuccino" style={{ height: "clamp(35px, 6vw, 50px)", width: "auto", objectFit: "contain" }} />
-            <img src="https://eggsquis.com/wp-content/themes/eggsquis/img/logo-eggsquis.png" alt="Eggsquis" style={{ height: "clamp(30px, 5vw, 45px)", width: "auto", objectFit: "contain" }} />
+            <img src="/logo-lacage.png" alt="La Cage" style={{ height: "clamp(35px, 6vw, 50px)", width: "auto", objectFit: "contain" }} />
+            <img src="/logo-caffuccino.png" alt="Caffuccino" style={{ height: "clamp(35px, 6vw, 50px)", width: "auto", objectFit: "contain" }} />
+            <img src="/logo-eggsquis.png" alt="Eggsquis" style={{ height: "clamp(30px, 5vw, 45px)", width: "auto", objectFit: "contain" }} />
           </div>
         </div>
       </section>
