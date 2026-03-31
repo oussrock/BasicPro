@@ -149,7 +149,7 @@ export default function App() {
             — {t.clientsTitle} —
           </div>
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "center", gap: "clamp(30px, 8vw, 60px)", opacity: 0.8 }}>
-            <img src="logo-lacage.png" alt="La Cage" style={{ height: "clamp(35px, 6vw, 50px)", width: "auto", objectFit: "contain" }} />
+            <img src="logo-lacage.svg" alt="La Cage" style={{ height: "clamp(35px, 6vw, 50px)", width: "auto", objectFit: "contain" }} />
             <img src="logo-caffuccino.png" alt="Caffuccino" style={{ height: "clamp(35px, 6vw, 50px)", width: "auto", objectFit: "contain" }} />
             <img src="logo-eggsquis.png" alt="Eggsquis" style={{ height: "clamp(30px, 5vw, 45px)", width: "auto", objectFit: "contain" }} />
           </div>
