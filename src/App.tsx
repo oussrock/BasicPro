@@ -160,7 +160,7 @@ export default function App() {
       <Section
         id="night"
         className="p"
-        bgImage="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=1600&q=80"
+        bgImage="https://images.unsplash.com/photo-1562564055-71e051d33c19?w=1600&q=80"
         overlay="linear-gradient(135deg,rgba(4,8,24,.93) 0%,rgba(7,14,40,.90) 60%,rgba(13,27,75,.88) 100%)"
         style={{ padding: "92px 18px" }}
       >
@@ -206,7 +206,7 @@ export default function App() {
         id="services"
         className="p"
         isLight
-        bgImage="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1600&q=80"
+        bgImage="https://images.unsplash.com/photo-1527515637462-cff94aca55f2?w=1600&q=80"
         style={{ padding: "92px 18px" }}
       >
         <div style={{ maxWidth: 1140, margin: "0 auto", position: "relative", zIndex: 2 }}>
