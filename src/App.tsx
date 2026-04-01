@@ -33,14 +33,21 @@ export default function App() {
   const [sent, setSent] = useState<boolean>(false);
   const [sending, setSending] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
+const { visibleSections, activeSection } = useSectionObserver(SECTION_IDS);
+const t = T[lang];
 
-  const { visibleSections, activeSection } = useSectionObserver(SECTION_IDS);
-  const t = T[lang];
+// Auto-detect language and update HTML tag
+useEffect(() => {
+  const userLang = navigator.language || (navigator as any).userLanguage;
+  if (userLang.startsWith("en") && lang === "fr") {
+    setLang("en");
+  }
+}, []);
 
-  useEffect(() => {
-    const userLang = navigator.language || (navigator as any).userLanguage;
-    if (userLang.startsWith("en")) setLang("en");
-  }, []);
+useEffect(() => {
+  document.documentElement.lang = lang;
+}, [lang]);
+
 
   const go = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -154,9 +161,9 @@ export default function App() {
             — {t.clientsTitle} —
           </div>
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "center", gap: "clamp(30px, 8vw, 60px)", opacity: 0.8 }}>
-            <img src="logo-lacage.jpg" alt="La Cage" style={{ height: "clamp(35px, 6vw, 50px)", width: "auto", objectFit: "contain" }} />
-            <img src="logo-caffuccino.jpg" alt="Caffuccino" style={{ height: "clamp(35px, 6vw, 50px)", width: "auto", objectFit: "contain" }} />
-            <img src="logo-eggsquis.jpg" alt="Eggsquis" style={{ height: "clamp(30px, 5vw, 45px)", width: "auto", objectFit: "contain" }} />
+            <img src="logo-lacage.jpg" alt="Partenaire commercial: La Cage Brasserie Sportive" title="Nettoyage commercial pour La Cage" style={{ height: "clamp(35px, 6vw, 50px)", width: "auto", objectFit: "contain" }} />
+            <img src="logo-caffuccino.jpg" alt="Partenaire commercial: Caffuccino Sherbrooke" title="Entretien ménager pour Caffuccino" style={{ height: "clamp(35px, 6vw, 50px)", width: "auto", objectFit: "contain" }} />
+            <img src="logo-eggsquis.jpg" alt="Partenaire commercial: Eggsquis Sherbrooke" title="Service de nettoyage pour Eggsquis" style={{ height: "clamp(30px, 5vw, 45px)", width: "auto", objectFit: "contain" }} />
           </div>
         </div>
       </section>

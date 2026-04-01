@@ -152,12 +152,12 @@ export const T: Record<string, Translations> = {
     svc: {
       title:"Nos Services de Nettoyage", sub:"Expertise complète en entretien ménager à Sherbrooke et Magog",
       items:[
-        { icon:"🏢", title:"Bureaux & Commerces", desc:"Entretien régulier de bureaux à Sherbrooke. Environnement sain pour vos employés et clients." },
-        { icon:"🍽️", title:"Restaurants & Bars", desc:"Nettoyage spécialisé pour la restauration. Respect strict des normes sanitaires du MAPAQ." },
-        { icon:"✨", title:"Grand Ménage", desc:"Nettoyage en profondeur, décapage et cirage de planchers, et grand ménage après construction." },
-        { icon:"🏠", title:"Entretien Résidentiel", desc:"Service de ménage professionnel pour votre domicile ou vos immeubles à revenus." },
-        { icon:"🧼", title:"Tapis & Fenêtres", desc:"Nettoyage professionnel de tapis et lavage de vitres commercial pour une image impeccable." },
-        { icon:"🌿", title:"Produits Certifiés", desc:"Utilisation de produits de nettoyage efficaces et respectueux de l'environnement." },
+        { icon:"🏢", title:"Bureaux & Commerces", desc:"Spécialistes du nettoyage de bureaux à Sherbrooke. Nous désinfectons les surfaces communes, claviers et poignées pour réduire l'absentéisme." },
+        { icon:"🍽️", title:"Restaurants & Bars", desc:"Nettoyage profond pour la restauration. Nous suivons les protocoles MAPAQ pour les cuisines, hottes et salles à manger impeccables." },
+        { icon:"✨", title:"Grand Ménage", desc:"Nettoyage intensif : décapage, cirage de planchers, nettoyage après construction et remise à neuf complète de vos locaux industriels." },
+        { icon:"🏠", title:"Entretien Résidentiel", desc:"Service de ménage de luxe pour résidences privées et immeubles à revenus. Discrétion, fiabilité et produits haut de gamme." },
+        { icon:"🧼", title:"Tapis & Fenêtres", desc:"Lavage de vitres commercial en hauteur et nettoyage de tapis par extraction pour prolonger la durée de vie de vos revêtements de sol." },
+        { icon:"🌿", title:"Produits Certifiés", desc:"Nous privilégions des produits écologiques performants, sécuritaires pour vos employés et l'environnement de travail." },
       ],
     },
     why: {
@@ -184,10 +184,10 @@ export const T: Record<string, Translations> = {
     },
     faqTitle: "Questions Fréquentes",
     faq: [
-      { q: "Quelles zones desservez-vous?", a: "Nous couvrons Sherbrooke, Magog, Lennoxville, North Hatley et toute la région de l'Estrie." },
-      { q: "Êtes-vous assurés?", a: "Oui, nous possédons une assurance responsabilité complète pour protéger votre établissement." },
-      { q: "Nettoyez-vous durant la nuit?", a: "Absolument. Nous sommes experts en services nocturnes pour éviter toute interruption de vos activités." },
-      { q: "Quels types de produits utilisez-vous?", a: "Nous utilisons des produits professionnels certifiés, et des options écologiques sont disponibles sur demande." }
+      { q: "Quelles zones desservez-vous exactement?", a: "Notre équipe mobile dessert Sherbrooke (Rock Forest, Fleurimont, Lennoxville), Magog, North Hatley et Orford." },
+      { q: "Quelles sont vos certifications et assurances?", a: "Nous possédons une assurance responsabilité civile de 2M$ et tous nos employés subissent une vérification d'antécédents rigoureuse." },
+      { q: "Comment assurez-vous la qualité du nettoyage?", a: "Nous utilisons une fiche de contrôle stricte et effectuons des inspections surprises régulières par nos superviseurs de zone." },
+      { q: "Offrez-vous des contrats personnalisés?", a: "Oui, nous créons des plans d'entretien sur mesure (quotidien, hebdomadaire ou mensuel) adaptés à votre budget et vos horaires." }
     ],
     trust: {
       title: "Votre Partenaire de Confiance",
@@ -235,14 +235,14 @@ export const T: Record<string, Translations> = {
       cta:"Schedule my overnight service",
     },
     svc:{
-      title:"Our Services", sub:"Complete solutions for every space",
+      title:"Our Cleaning Services", sub:"Complete maintenance solutions for Sherbrooke and Magog",
       items:[
-        { icon:"🏢", title:"Offices & Commercial", desc:"Regular and deep cleaning of your workspaces. Healthy environment, productive employees." },
-        { icon:"🍽️", title:"Restaurants", desc:"Specialized restaurant cleaning: kitchens, dining rooms, strict sanitary standards always met." },
-        { icon:"🏠", title:"Residential", desc:"Your home deserves the best. Personalized, discreet, and trusted service for your house." },
-        { icon:"🏛️", title:"Institutions", desc:"Hospitals, schools, community centres — we handle the most demanding environments." },
-        { icon:"✨", title:"Deep Cleaning", desc:"Stripping, floor waxing, window cleaning and much more for a flawless result." },
-        { icon:"🌿", title:"Eco-Friendly Options", desc:"Environmentally respectful product options available upon request." },
+        { icon:"🏢", title:"Offices & Commercial", desc:"Sherbrooke office cleaning specialists. We disinfect high-touch surfaces, keyboards, and handles to reduce workplace illness and absenteeism." },
+        { icon:"🍽️", title:"Restaurants & Bars", desc:"Deep cleaning for the food industry. We follow strict MAPAQ protocols for kitchens, hoods, and immaculate dining rooms." },
+        { icon:"✨", title:"Grand Ménage", desc:"Intensive deep cleaning: floor stripping, waxing, post-construction cleanup, and complete industrial facility restoration." },
+        { icon:"🏠", title:"Residential Cleaning", desc:"Premium housekeeping for private residences and income properties. Discretion, reliability, and top-tier cleaning products." },
+        { icon:"🧼", title:"Carpets & Windows", desc:"High-rise commercial window washing and steam carpet extraction to extend the life of your flooring." },
+        { icon:"🌿", title:"Certified Products", desc:"We prioritize high-performance eco-friendly products that are safe for your employees and the environment." },
       ],
     },
     why:{
@@ -269,10 +269,10 @@ export const T: Record<string, Translations> = {
     },
     faqTitle: "Frequently Asked Questions",
     faq: [
-      { q: "Which areas do you serve?", a: "We cover Sherbrooke, Magog, Lennoxville, North Hatley, and the entire Eastern Townships region." },
-      { q: "Are you insured?", a: "Yes, we carry full liability insurance to protect your business premises." },
-      { q: "Do you clean during the night?", a: "Absolutely. We specialize in overnight services to ensure zero interruption to your business." },
-      { q: "What cleaning products do you use?", a: "We use certified professional products, with eco-friendly options available upon request." }
+      { q: "Which areas do you serve exactly?", a: "Our mobile team serves Sherbrooke (Rock Forest, Fleurimont, Lennoxville), Magog, North Hatley, and Orford." },
+      { q: "What are your certifications and insurance coverage?", a: "We carry $2M in general liability insurance, and all staff members undergo rigorous background checks for your peace of mind." },
+      { q: "How do you ensure cleaning quality?", a: "We use a detailed checklist for every visit, and our area supervisors perform regular surprise spot-checks to maintain our high standards." },
+      { q: "Do you offer customized service contracts?", a: "Yes, we design tailored maintenance plans (daily, weekly, or monthly) that fit your specific facility needs and budget." }
     ],
     trust: {
       title: "Your Trusted Partner",
