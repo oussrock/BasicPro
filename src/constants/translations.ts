@@ -100,6 +100,11 @@ export interface FooterTranslations {
   };
 }
 
+export interface FAQItem {
+  q: string;
+  a: string;
+}
+
 export interface Translations {
   nav: NavTranslations;
   hero: HeroTranslations;
@@ -110,6 +115,12 @@ export interface Translations {
   form: FormTranslations;
   contact: ContactTranslations;
   footer: FooterTranslations;
+  faqTitle: string;
+  faq: FAQItem[];
+  trust: {
+    title: string;
+    items: string[];
+  };
 }
 
 export const T: Record<string, Translations> = {
@@ -166,6 +177,17 @@ export const T: Record<string, Translations> = {
       phone:"Téléphone", email:"Courriel", zones:"Zones desservies", zonesV:"Sherbrooke & Magog et environs",
       hours:"Heures d'opération", hoursV:"Lun–Ven: 4h–20h | Sam: 4h–17h",
       hoursN:"Interventions nocturnes disponibles sur entente",
+    },
+    faqTitle: "Questions Fréquentes",
+    faq: [
+      { q: "Quelles zones desservez-vous?", a: "Nous couvrons Sherbrooke, Magog, Lennoxville, North Hatley et toute la région de l'Estrie." },
+      { q: "Êtes-vous assurés?", a: "Oui, nous possédons une assurance responsabilité complète pour protéger votre établissement." },
+      { q: "Nettoyez-vous durant la nuit?", a: "Absolument. Nous sommes experts en services nocturnes pour éviter toute interruption de vos activités." },
+      { q: "Quels types de produits utilisez-vous?", a: "Nous utilisons des produits professionnels certifiés, et des options écologiques sont disponibles sur demande." }
+    ],
+    trust: {
+      title: "Votre Partenaire de Confiance",
+      items: ["Assurance Responsabilité Complète", "Équipe Formée & Vérifiée", "Produits Certifiés", "Satisfaction 100% Garantie"]
     },
     footer:{ 
       tag:"L'entretien ménager professionnel à votre service.", 
@@ -231,6 +253,17 @@ export const T: Record<string, Translations> = {
       phone:"Phone", email:"Email", zones:"Service Areas", zonesV:"Sherbrooke & Magog and surroundings",
       hours:"Operating Hours", hoursV:"Mon–Fri: 4AM–8PM | Sat: 4AM–5PM",
       hoursN:"Overnight services available by arrangement",
+    },
+    faqTitle: "Frequently Asked Questions",
+    faq: [
+      { q: "Which areas do you serve?", a: "We cover Sherbrooke, Magog, Lennoxville, North Hatley, and the entire Eastern Townships region." },
+      { q: "Are you insured?", a: "Yes, we carry full liability insurance to protect your business premises." },
+      { q: "Do you clean during the night?", a: "Absolutely. We specialize in overnight services to ensure zero interruption to your business." },
+      { q: "What cleaning products do you use?", a: "We use certified professional products, with eco-friendly options available upon request." }
+    ],
+    trust: {
+      title: "Your Trusted Partner",
+      items: ["Full Liability Insurance", "Trained & Verified Team", "Certified Products", "100% Satisfaction Guaranteed"]
     },
     footer:{ 
       tag:"Professional cleaning services at your service.", 

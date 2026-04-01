@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser"; // Import EmailJS
 import { T, MAIL } from "./constants/translations";
 import { useSectionObserver } from "./hooks/useSectionObserver";
@@ -36,6 +36,11 @@ export default function App() {
 
   const { visibleSections, activeSection } = useSectionObserver(SECTION_IDS);
   const t = T[lang];
+
+  useEffect(() => {
+    const userLang = navigator.language || (navigator as any).userLanguage;
+    if (userLang.startsWith("en")) setLang("en");
+  }, []);
 
   const go = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -156,6 +161,21 @@ export default function App() {
         </div>
       </section>
 
+      {/* TRUST BADGES */}
+      <section style={{ background: "white", padding: "60px 18px", borderBottom: "1px solid #eee" }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto", textAlign: "center" }}>
+          <h2 className="s" style={{ fontSize: "clamp(24px, 4vw, 36px)", fontWeight: 800, color: "var(--navy)", marginBottom: 40 }}>{t.trust.title}</h2>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 24 }}>
+            {t.trust.items.map((item, i) => (
+              <div key={i} className="fade-in vis" style={{ padding: "24px", background: "#f9f9f9", borderRadius: "12px", border: "1px solid #eee" }}>
+                <div style={{ fontSize: "32px", marginBottom: "12px" }}>🛡️</div>
+                <div className="s" style={{ fontWeight: 700, color: "var(--navy)", fontSize: "14px" }}>{item}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* NIGHT */}
       <Section
         id="night"
@@ -230,6 +250,24 @@ export default function App() {
                 <p className="s" style={{ color: "var(--muted)", lineHeight: 1.75, fontSize: 14 }}>
                   {s.desc}
                 </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Section>
+
+      {/* FAQ SECTION */}
+      <Section id="faq" isLight style={{ padding: "92px 18px", background: "#f8f6f1" }}>
+        <div style={{ maxWidth: 800, margin: "0 auto" }}>
+          <div style={{ textAlign: "center", marginBottom: 48 }}>
+            <div className="s" style={{ color: "var(--gold)", fontSize: 10, fontWeight: 700, letterSpacing: ".28em", textTransform: "uppercase", marginBottom: 12 }}>— QUESTIONS —</div>
+            <h2 style={{ fontSize: "clamp(26px,5vw,46px)", fontWeight: 900, color: "var(--navy)" }}>{t.faqTitle}</h2>
+          </div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+            {t.faq.map((f, i) => (
+              <div key={i} className="fade-in vis" style={{ background: "white", padding: "24px", borderRadius: "8px", boxShadow: "0 4px 12px rgba(0,0,0,0.03)" }}>
+                <h3 style={{ fontSize: "17px", fontWeight: 700, color: "var(--navy)", marginBottom: 8 }}>{f.q}</h3>
+                <p className="s" style={{ fontSize: "15px", color: "var(--muted)", lineHeight: 1.6 }}>{f.a}</p>
               </div>
             ))}
           </div>
@@ -432,6 +470,20 @@ export default function App() {
       </Section>
 
       <Footer t={t} MAIL={MAIL} />
+
+      {/* FLOATING MOBILE CTA */}
+      <div className="mobile-cta" style={{ position: "fixed", bottom: "20px", left: "20px", right: "20px", zIndex: 100 }}>
+        <button className="bg" style={{ width: "100%", boxShadow: "0 10px 25px rgba(201,168,76,0.4)", padding: "16px", borderRadius: "50px", border: "none", cursor: "pointer" }} onClick={() => go("quote")}>
+          {t.hero.cta} ⚡
+        </button>
+      </div>
+
+      <style dangerouslySetInnerHTML={{ __html: `
+        .mobile-cta { display: none; }
+        @media (max-width: 768px) {
+          .mobile-cta { display: block !important; }
+        }
+      `}} />
     </div>
   );
 }
