@@ -161,22 +161,47 @@ export default function App() {
         </div>
       </section>
 
-      {/* TRUST BADGES */}
-      <section style={{ background: "white", padding: "60px 18px", borderBottom: "1px solid #eee" }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto", textAlign: "center" }}>
-          <h2 className="s" style={{ fontSize: "clamp(24px, 4vw, 36px)", fontWeight: 800, color: "var(--navy)", marginBottom: 40 }}>{t.trust.title}</h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 24 }}>
-            {t.trust.items.map((item, i) => (
-              <div key={i} className="fade-in vis" style={{ padding: "24px", background: "#f9f9f9", borderRadius: "12px", border: "1px solid #eee" }}>
-                <div style={{ fontSize: "32px", marginBottom: "12px" }}>🛡️</div>
-                <div className="s" style={{ fontWeight: 700, color: "var(--navy)", fontSize: "14px" }}>{item}</div>
+      {/* TRUST BADGES ... */}
+
+      {/* SECTORS SECTION */}
+      <section style={{ background: "#040a1a", padding: "80px 18px", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+          <div style={{ textAlign: "center", marginBottom: 48 }}>
+            <div className="s" style={{ color: "var(--gold)", fontSize: 10, fontWeight: 700, letterSpacing: ".28em", textTransform: "uppercase", marginBottom: 12 }}>— EXPERTISE —</div>
+            <h2 style={{ fontSize: "clamp(26px,5vw,40px)", fontWeight: 900, color: "white" }}>{t.sectorsTitle}</h2>
+          </div>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))", gap: 16 }}>
+            {t.sectors.map((sector, i) => (
+              <div key={i} style={{ padding: "16px 20px", background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.1)", color: "rgba(255,255,255,0.7)", fontSize: "14px", display: "flex", alignItems: "center", gap: "12px" }}>
+                <span style={{ color: "var(--gold)" }}>◈</span> {sector}
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* NIGHT */}
+      {/* METHOD / PROCESS SECTION */}
+      <Section id="method" isLight style={{ padding: "92px 18px", background: "white" }}>
+        <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+          <div style={{ textAlign: "center", marginBottom: 60 }}>
+            <div className="s" style={{ color: "var(--gold)", fontSize: 10, fontWeight: 700, letterSpacing: ".28em", textTransform: "uppercase", marginBottom: 12 }}>— QUALITÉ —</div>
+            <h2 style={{ fontSize: "clamp(26px,5vw,46px)", fontWeight: 900, color: "var(--navy)" }}>{t.methodTitle}</h2>
+          </div>
+          <div className="g4" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 30 }}>
+            {t.methodSteps.map((step, i) => (
+              <div key={i} style={{ textAlign: "center" }}>
+                <div style={{ width: "60px", height: "60px", background: "var(--navy)", color: "var(--gold)", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px", fontSize: "20px", fontWeight: "bold" }}>
+                  {i+1}
+                </div>
+                <h3 style={{ fontSize: "18px", fontWeight: 700, color: "var(--navy)", marginBottom: 12 }}>{step.title}</h3>
+                <p style={{ fontSize: "14px", color: "var(--muted)", lineHeight: 1.6 }}>{step.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Section>
+
+      {/* NIGHT ... */}
       <Section
         id="night"
         className="p"
@@ -470,6 +495,11 @@ export default function App() {
       </Section>
 
       <Footer t={t} MAIL={MAIL} />
+
+      {/* LOCAL AUTHORITY SEO TEXT */}
+      <div style={{ padding: "20px", background: "#040a1a", color: "rgba(255,255,255,0.05)", fontSize: "10px", textAlign: "center" }}>
+        Expert en entretien ménager desservant le secteur de l'Université de Sherbrooke, le CHUS Fleurimont, le centre-ville de Magog, Rock Forest, Saint-Élie, et Deauville. Service de nettoyage commercial et industriel en Estrie.
+      </div>
 
       {/* FLOATING MOBILE CTA */}
       <div className="mobile-cta" style={{ position: "fixed", bottom: "20px", left: "20px", right: "20px", zIndex: 100 }}>

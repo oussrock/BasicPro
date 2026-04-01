@@ -100,9 +100,9 @@ export interface FooterTranslations {
   };
 }
 
-export interface FAQItem {
-  q: string;
-  a: string;
+export interface ProcessStep {
+  title: string;
+  desc: string;
 }
 
 export interface Translations {
@@ -121,6 +121,10 @@ export interface Translations {
     title: string;
     items: string[];
   };
+  sectorsTitle: string;
+  sectors: string[];
+  methodTitle: string;
+  methodSteps: ProcessStep[];
 }
 
 export const T: Record<string, Translations> = {
@@ -189,6 +193,15 @@ export const T: Record<string, Translations> = {
       title: "Votre Partenaire de Confiance",
       items: ["Assurance Responsabilité Complète", "Équipe Formée & Vérifiée", "Produits Certifiés", "Satisfaction 100% Garantie"]
     },
+    sectorsTitle: "Secteurs d'activité",
+    sectors: ["Bureaux & Espaces corporatifs", "Restaurants, Bars & Cafés", "Garderies & Centres de la petite enfance", "Cliniques Médicales & Dentaires", "Établissements d'enseignement", "Magasins & Centres commerciaux", "Salles de sport & Gyms", "Entrepôts & Espaces industriels"],
+    methodTitle: "Notre Méthode d'Excellence",
+    methodSteps: [
+      { title: "1. Inspection", desc: "Analyse personnalisée de vos besoins et des points critiques de votre établissement." },
+      { title: "2. Planification", desc: "Établissement d'un horaire sur mesure pour ne jamais déranger vos opérations." },
+      { title: "3. Exécution", desc: "Nettoyage rigoureux par nos experts utilisant des produits de qualité supérieure." },
+      { title: "4. Contrôle Qualité", desc: "Suivi rigoureux pour garantir un résultat impeccable à chaque visite." }
+    ],
     footer:{ 
       tag:"L'entretien ménager professionnel à votre service.", 
       rights:"Tous droits réservés.",
@@ -265,6 +278,15 @@ export const T: Record<string, Translations> = {
       title: "Your Trusted Partner",
       items: ["Full Liability Insurance", "Trained & Verified Team", "Certified Products", "100% Satisfaction Guaranteed"]
     },
+    sectorsTitle: "Industries We Serve",
+    sectors: ["Offices & Corporate Spaces", "Restaurants, Bars & Cafes", "Daycares & Preschools", "Medical & Dental Clinics", "Educational Institutions", "Retail Stores & Shopping Malls", "Gyms & Fitness Centers", "Warehouses & Industrial Spaces"],
+    methodTitle: "Our Method of Excellence",
+    methodSteps: [
+      { title: "1. Inspection", desc: "Customized analysis of your needs and the critical points of your facility." },
+      { title: "2. Planning", desc: "Establishing a tailored schedule to never disrupt your operations." },
+      { title: "3. Execution", desc: "Rigorous cleaning by our experts using top-quality products." },
+      { title: "4. Quality Control", desc: "Regular follow-ups to guarantee a spotless result at every visit." }
+    ],
     footer:{ 
       tag:"Professional cleaning services at your service.", 
       rights:"All rights reserved.",
