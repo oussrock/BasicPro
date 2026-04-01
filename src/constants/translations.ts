@@ -127,10 +127,10 @@ export const T: Record<string, Translations> = {
   fr: {
     nav: { home:"Accueil", services:"Services", night:"On travaille la nuit", contact:"Contact", quote:"Soumission gratuite" },
     hero: {
-      badge:"Sherbrooke & Magog", title:"L'excellence du", hi:"nettoyage professionnel",
-      sub:"Des espaces impeccables pour vos restaurants, bureaux et institutions. Qualité garantie, résultats remarquables.",
-      cta:"Soumission gratuite", cta2:"Nos services",
-      t1:"Restaurants & Bureaux", t2:"Sherbrooke & Magog", t3:"Satisfaction garantie",
+      badge:"Nettoyage Sherbrooke & Magog", title:"Services de", hi:"nettoyage professionnel",
+      sub:"L'expert en entretien ménager à Sherbrooke. Nettoyage de restaurants, bureaux et grand ménage commercial. Qualité garantie, estimation gratuite.",
+      cta:"Estimation gratuite", cta2:"Nos services",
+      t1:"Nettoyage de Bureaux", t2:"Sherbrooke & Magog", t3:"Satisfaction garantie",
     },
     clientsTitle: "Ils nous font confiance",
     night: {
@@ -146,14 +146,14 @@ export const T: Record<string, Translations> = {
       cta:"Planifier mon service nocturne",
     },
     svc: {
-      title:"Nos Services", sub:"Des solutions complètes pour chaque espace",
+      title:"Nos Services de Nettoyage", sub:"Expertise complète en entretien ménager à Sherbrooke et Magog",
       items:[
-        { icon:"🏢", title:"Bureaux & Commerces", desc:"Entretien régulier et en profondeur de vos espaces de travail. Environnement sain, employés productifs." },
-        { icon:"🍽️", title:"Restaurants", desc:"Nettoyage spécialisé : cuisines, salles à manger, normes sanitaires strictement respectées." },
-        { icon:"🏠", title:"Résidentiel", desc:"Votre domicile mérite le meilleur. Service personnalisé, discret et de confiance." },
-        { icon:"🏛️", title:"Institutions", desc:"Hôpitaux, écoles, centres communautaires — nous gérons les environnements les plus exigeants." },
-        { icon:"✨", title:"Nettoyage en profondeur", desc:"Décapage, cirage de planchers, nettoyage de vitres et bien plus pour un résultat impeccable." },
-        { icon:"🌿", title:"Produits écologiques", desc:"Options de produits respectueux de l'environnement disponibles sur demande." },
+        { icon:"🏢", title:"Bureaux & Commerces", desc:"Entretien régulier de bureaux à Sherbrooke. Environnement sain pour vos employés et clients." },
+        { icon:"🍽️", title:"Restaurants & Bars", desc:"Nettoyage spécialisé pour la restauration. Respect strict des normes sanitaires du MAPAQ." },
+        { icon:"✨", title:"Grand Ménage", desc:"Nettoyage en profondeur, décapage et cirage de planchers, et grand ménage après construction." },
+        { icon:"🏠", title:"Entretien Résidentiel", desc:"Service de ménage professionnel pour votre domicile ou vos immeubles à revenus." },
+        { icon:"🧼", title:"Tapis & Fenêtres", desc:"Nettoyage professionnel de tapis et lavage de vitres commercial pour une image impeccable." },
+        { icon:"🌿", title:"Produits Certifiés", desc:"Utilisation de produits de nettoyage efficaces et respectueux de l'environnement." },
       ],
     },
     why: {
@@ -194,9 +194,9 @@ export const T: Record<string, Translations> = {
       rights:"Tous droits réservés.",
       zonesTitle: "Zones Desservies",
       zones: {
-        sherbrooke: ["Lennoxville", "Fleurimont", "Brompton", "Rock Forest"],
-        magog: ["Magog", "Orford", "North Hatley", "Stanstead"],
-        others: ["Coaticook", "Richmond", "Windsor", "Estrie"]
+        sherbrooke: ["Rock Forest", "Bromptonville", "Lennoxville", "Fleurimont", "Ascot Corner"],
+        magog: ["Magog", "Orford", "Deauville", "North Hatley", "Stanstead"],
+        others: ["Coaticook", "Richmond", "Windsor", "East Angus", "Estrie"]
       }
     },
   },
