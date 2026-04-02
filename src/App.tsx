@@ -100,6 +100,28 @@ useEffect(() => {
 
   return (
     <div style={{ minHeight: "100vh" }}>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Accueil",
+            "item": "https://basicpro.net/"
+          },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://basicpro.net/#services"
+          },{
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Contact",
+            "item": "https://basicpro.net/#contact"
+          }]
+        })}
+      </script>
       <Navbar
         lang={lang}
         setLang={setLang}
@@ -504,8 +526,17 @@ useEffect(() => {
       <Footer t={t} MAIL={MAIL} />
 
       {/* LOCAL AUTHORITY SEO TEXT */}
-      <div style={{ padding: "20px", background: "#040a1a", color: "rgba(255,255,255,0.05)", fontSize: "10px", textAlign: "center" }}>
-        Expert en entretien ménager desservant le secteur de l'Université de Sherbrooke, le CHUS Fleurimont, le centre-ville de Magog, Rock Forest, Saint-Élie, et Deauville. Service de nettoyage commercial et industriel en Estrie.
+      <div style={{ padding: "40px 20px", background: "#040a1a", color: "rgba(255,255,255,0.08)", fontSize: "11px", textAlign: "center", borderTop: "1px solid rgba(255,255,255,0.03)" }}>
+        <p style={{ maxWidth: 900, margin: "0 auto", lineHeight: 1.8 }}>
+          <strong>Basic.Pro-Net : Votre expert en entretien ménager en Estrie.</strong> Nous desservons fièrement les secteurs suivants : 
+          Sherbrooke, Magog, Rock Forest, Bromptonville, Fleurimont, Lennoxville, Deauville, Ascot Corner, Orford, North Hatley, 
+          Coaticook, Richmond, Windsor, East Angus, Stanstead, et Compton. Spécialistes du nettoyage commercial près de l'Université de Sherbrooke 
+          et du CHUS. Service de ménage industriel et institutionnel haut de gamme disponible 24/7.
+        </p>
+        <div style={{ marginTop: 20 }}>
+          <a href="#" style={{ color: "rgba(255,255,255,0.2)", textDecoration: "none", margin: "0 10px" }}>Politique de Confidentialité</a>
+          <a href="#" style={{ color: "rgba(255,255,255,0.2)", textDecoration: "none", margin: "0 10px" }}>Conditions d'utilisation</a>
+        </div>
       </div>
 
       {/* FLOATING MOBILE CTA */}

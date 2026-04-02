@@ -152,12 +152,12 @@ export const T: Record<string, Translations> = {
     svc: {
       title:"Nos Services de Nettoyage", sub:"Expertise complète en entretien ménager à Sherbrooke et Magog",
       items:[
-        { icon:"🏢", title:"Bureaux & Commerces", desc:"Spécialistes du nettoyage de bureaux à Sherbrooke. Nous désinfectons les surfaces communes, claviers et poignées pour réduire l'absentéisme." },
-        { icon:"🍽️", title:"Restaurants & Bars", desc:"Nettoyage profond pour la restauration. Nous suivons les protocoles MAPAQ pour les cuisines, hottes et salles à manger impeccables." },
-        { icon:"✨", title:"Grand Ménage", desc:"Nettoyage intensif : décapage, cirage de planchers, nettoyage après construction et remise à neuf complète de vos locaux industriels." },
-        { icon:"🏠", title:"Entretien Résidentiel", desc:"Service de ménage de luxe pour résidences privées et immeubles à revenus. Discrétion, fiabilité et produits haut de gamme." },
-        { icon:"🧼", title:"Tapis & Fenêtres", desc:"Lavage de vitres commercial en hauteur et nettoyage de tapis par extraction pour prolonger la durée de vie de vos revêtements de sol." },
-        { icon:"🌿", title:"Produits Certifiés", desc:"Nous privilégions des produits écologiques performants, sécuritaires pour vos employés et l'environnement de travail." },
+        { icon:"🏢", title:"Bureaux & Commerces", desc:"Experts en maintenance d'espaces corporatifs. Nous assurons la désinfection des postes de travail, le nettoyage des aires communes et la gestion des déchets. Un bureau propre augmente la productivité et réduit la propagation des virus en milieu de travail." },
+        { icon:"🍽️", title:"Restaurants & Bars", desc:"Nettoyage spécialisé pour l'industrie alimentaire à Sherbrooke. Respect rigoureux des normes d'hygiène (MAPAQ). Lavage de planchers de cuisine, désinfection des salles à manger et nettoyage en profondeur des sanitaires." },
+        { icon:"✨", title:"Grand Ménage & Industriel", desc:"Services de grand ménage saisonnier ou après construction. Décapage, cirage de planchers, nettoyage haute pression et remise à neuf de locaux industriels. Nous redonnons l'éclat original à vos surfaces les plus ternes." },
+        { icon:"🏠", title:"Entretien Résidentiel", desc:"Service de ménage de confiance pour résidences et immeubles à revenus. Nos équipes qualifiées s'occupent de tout : époussetage, aspirateur, lavage de planchers et désinfection complète pour un foyer sain et accueillant." },
+        { icon:"🧼", title:"Tapis & Vitres", desc:"Équipements professionnels pour le nettoyage de tapis par extraction et lavage de vitres commercial sans traces. Améliorez l'image de marque de votre commerce avec des vitrines étincelantes et des tapis impeccables." },
+        { icon:"🌿", title:"Éco-Responsabilité", desc:"Engagement vert : nous privilégions l'utilisation de produits biodégradables et certifiés éco-logo. Performants pour le nettoyage tout en étant sécuritaires pour vos employés, clients et l'environnement." },
       ],
     },
     why: {
@@ -237,12 +237,12 @@ export const T: Record<string, Translations> = {
     svc:{
       title:"Our Cleaning Services", sub:"Complete maintenance solutions for Sherbrooke and Magog",
       items:[
-        { icon:"🏢", title:"Offices & Commercial", desc:"Sherbrooke office cleaning specialists. We disinfect high-touch surfaces, keyboards, and handles to reduce workplace illness and absenteeism." },
-        { icon:"🍽️", title:"Restaurants & Bars", desc:"Deep cleaning for the food industry. We follow strict MAPAQ protocols for kitchens, hoods, and immaculate dining rooms." },
-        { icon:"✨", title:"Grand Ménage", desc:"Intensive deep cleaning: floor stripping, waxing, post-construction cleanup, and complete industrial facility restoration." },
-        { icon:"🏠", title:"Residential Cleaning", desc:"Premium housekeeping for private residences and income properties. Discretion, reliability, and top-tier cleaning products." },
-        { icon:"🧼", title:"Carpets & Windows", desc:"High-rise commercial window washing and steam carpet extraction to extend the life of your flooring." },
-        { icon:"🌿", title:"Certified Products", desc:"We prioritize high-performance eco-friendly products that are safe for your employees and the environment." },
+        { icon:"🏢", title:"Office & Corporate", desc:"Experts in corporate facility maintenance. We ensure workstation disinfection, common area sanitization, and waste management. A clean office boosts employee productivity and reduces the spread of seasonal illnesses." },
+        { icon:"🍽️", title:"Restaurants & Bars", desc:"Specialized cleaning for the Sherbrooke food industry. Strict adherence to hygiene standards (MAPAQ). We handle kitchen floor degreasing, dining room disinfection, and deep cleaning of high-traffic washrooms." },
+        { icon:"✨", title:"Deep Clean & Industrial", desc:"Seasonal deep cleaning or post-construction cleanup services. Floor stripping, waxing, high-pressure washing, and industrial facility restoration. We bring the original shine back to your most worn-out surfaces." },
+        { icon:"🏠", title:"Residential Cleaning", desc:"Trusted housekeeping for private residences and income properties. Our qualified team handles everything from dusting and vacuuming to floor mopping and complete home disinfection for a healthy living space." },
+        { icon:"🧼", title:"Carpets & Windows", desc:"Professional steam extraction for carpets and streak-free commercial window washing. Enhance your business brand image with sparkling windows and perfectly clean, fresh-smelling carpets." },
+        { icon:"🌿", title:"Eco-Responsibility", desc:"Green commitment: we prioritize biodegradable and eco-logo certified products. High-performance cleaning that is safe for your staff, clients, and the environment." },
       ],
     },
     why:{
