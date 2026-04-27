@@ -31,7 +31,7 @@ export function Footer({ t, MAIL }: FooterProps) {
           </div>
           <div>
             <h4 style={{ color: "var(--gold)", fontSize: 13, letterSpacing: "1px", textTransform: "uppercase", marginBottom: 16 }}>Contact</h4>
-            <p style={{ color: "rgba(255,255,255,0.4)", fontSize: 13, marginBottom: 6 }}>📞 819 432-6709</p>
+            <p style={{ color: "rgba(255,255,255,0.4)", fontSize: 13, marginBottom: 6 }}>📞 <a href='tel:+18195800313' style={{display:'inline-flex', alignItems:'center', gap:'6px', color:'inherit', textDecoration:'none', fontWeight:600}}>819-580-0313</a></p>
             <p style={{ color: "rgba(255,255,255,0.4)", fontSize: 13, marginBottom: 6 }}>📧 {MAIL}</p>
           </div>
         </div>

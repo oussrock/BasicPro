@@ -82,7 +82,7 @@ useEffect(() => {
       setSent(true);
       setFd({ name: "", email: "", phone: "", addr: "", type: "", size: "", freq: "", det: "" });
     } catch (err: any) {
-      console.Berror("FAILED TO SEND VIA EMAILJS:", err);
+      console.error("FAILED TO SEND VIA EMAILJS:", err);
       setError(`❌ Error sending message: ${err.message}. Please try again or call us.`);
     } finally {
       setSending(false);
@@ -458,7 +458,7 @@ useEffect(() => {
                   {sending ? t.form.sending : t.form.send}
                 </button>
                 <p className="s" style={{ color: "var(--muted)", fontSize: 12, marginTop: 12 }}>
-                  📧 {MAIL} &nbsp;|&nbsp; 📞 819 432-6709
+                  📧 {MAIL} &nbsp;|&nbsp; 📞 <a href='tel:+18195800313' style={{display:'inline-flex', alignItems:'center', gap:'6px', color:'inherit', textDecoration:'none', fontWeight:600}}>819-580-0313</a>
                 </p>
               </div>
             </form>
@@ -488,7 +488,7 @@ useEffect(() => {
           </div>
           <div className="cg" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14, marginBottom: 32 }}>
             {[
-              { icon: "📞", label: t.contact.phone, val: "819 432-6709", href: "tel:8194326709" },
+              { icon: "📞", label: t.contact.phone, val: <a href='tel:+18195800313' style={{display:'inline-flex', alignItems:'center', gap:'6px', color:'inherit', textDecoration:'none', fontWeight:600}}>819-580-0313</a>, href: null },
               { icon: "📧", label: t.contact.email, val: MAIL, href: `mailto:${MAIL}` },
               { icon: "📍", label: t.contact.zones, val: t.contact.zonesV, href: null },
               { icon: "🌙", label: t.contact.hours, val: t.contact.hoursV, sub: t.contact.hoursN, href: null },
@@ -552,6 +552,28 @@ useEffect(() => {
           .mobile-cta { display: block !important; }
         }
       `}} />
+
+      <a
+        href='https://wa.me/18195800313'
+        target='_blank'
+        rel='noopener noreferrer'
+        title='Écrire sur WhatsApp'
+        style={{
+          position:'fixed', bottom:'24px', right:'24px',
+          width:'56px', height:'56px', background:'#25D366',
+          borderRadius:'50%', display:'flex', alignItems:'center',
+          justifyContent:'center', zIndex:9999,
+          boxShadow:'0 4px 16px rgba(37,211,102,0.45)',
+          transition:'transform 0.2s',
+          textDecoration:'none'
+        }}
+        onMouseOver={e=>(e.currentTarget.style.transform='scale(1.12)')}
+        onMouseOut={e=>(e.currentTarget.style.transform='scale(1)')}
+      >
+        <svg viewBox='0 0 32 32' width='32' height='32' fill='white'>
+          <path d='M16 3C9.373 3 4 8.373 4 15c0 2.385.832 4.584 2.219 6.346L4.219 27l5.785-1.857A12.89 12.89 0 0016 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 22a10.93 10.93 0 01-5.57-1.516l-.4-.238-3.437 1.104 1.091-3.352-.261-.411A10.933 10.933 0 015 15c0-6.065 4.935-11 11-11s11 4.935 11 11-4.935 11-11 11zm6.016-8.197c-.33-.165-1.951-.963-2.253-1.073-.303-.11-.523-.165-.743.165-.22.33-.853 1.073-.045 1.293.808.22 1.733.753 2.541 1.963.088.132.066.22-.088.33-.551.385-1.156.605-1.761.77-.22.055-.44.055-.66-.22-.33-.385-.66-.77-.99-1.155-.33-.385-.66-.55-.99-.55-.33 0-.66.165-.99.385-.33.22-.66.55-.99.88-.165.165-.33.275-.495.33-.825.275-1.65.165-2.475-.385-1.155-.77-2.31-2.31-2.75-3.85-.22-.77-.165-1.485.165-2.2.33-.715.88-1.32 1.595-1.705.385-.22.77-.275 1.155-.165.385.11.66.44.935.825.275.385.55.77.825 1.155.165.22.22.44.055.66-.165.22-.33.44-.55.66-.11.11-.22.22-.33.33-.11.11-.11.22 0 .33.385.715.88 1.43 1.595 1.98.715.55 1.485.88 2.31.88.165 0 .275-.055.44-.165.165-.11.33-.22.495-.33.165-.11.275-.22.44-.22.165 0 .33.055.44.165z'/>
+        </svg>
+      </a>
     </div>
   );
 }

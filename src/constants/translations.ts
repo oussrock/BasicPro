@@ -105,6 +105,11 @@ export interface ProcessStep {
   desc: string;
 }
 
+export interface FAQItem {
+  q: string;
+  a: string;
+}
+
 export interface Translations {
   nav: NavTranslations;
   hero: HeroTranslations;
